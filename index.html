@@ -54,11 +54,6 @@
             ctrlIcon.classList.remove("fa-play");
         }
     }
-    if(song.play()){
-        setInterval(() => {
-            lin.value=song.currentTime;
-        }, 500)
-    }
     lin.onchange = function(){
         song.play();
         song.currentTime = lin.value;
